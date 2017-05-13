@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="animate.css ">
+    <link rel="stylesheet" href="card.css">
 </head>
+
 <body>
-	<h1>Top actors who win the most of oscars</h1>
-	<table>
-		<thread>
-			<tr>
-				<th>Name</th>
-				<th>Oscars</th>
-			</tr>
-		</thread>
-		<tr>
-			<th><a href="#">Katharine Helburb</a><span>4</span></th>
-		</tr>
-		<tr>
-			<th><a href="#">Daniel Day-Lewis</a><span>3</span></th>
-		</tr>
-		<tr>
-			<th><a href="#">Meryl Streep</a><span>3</span></th>
-		</tr>
-		<tr>
-			<th><a href="#">Jack Nicholson</a><span>3</span></th>
-		</tr>
-		<tr>
-			<th><a href="#">Ingrid Bergman</a><span>3</span></th>
-		</tr>
-	</table>
+    <h1>Top actors who won the biggest amound of oscars</h1>
+    <br>
+    <table id="Actors">
+        <thead>
+            <!-- <div id="header"> -->
+            <tr>
+                <th>Name</th>
+                <th>Oscars</th>
+            </tr>
+            <!-- </div> -->
+        </thead>
+        <tr>
+            <th>
+            <a href="#">Katharine Helburb
+				<div class="animated flipInX player-card">
+					<img src="pictures/Kathrine Hepburn.jpg" alt="Kethrine ">
+				<h4>Katharine Hepburn</h4>
+				<ul>
+					<li><strong>Date of birth</strong><span>12 may, 1907</span></li>
+					<li><strong>Film amounds</strong><span>114</span></li>
+					<li><strong>Best films</strong><span>
+						<ul>
+							<li>The Lion in Winter</li>
+							<li>On Golden Pond</li>
+							<li>Bringing Up Baby</li>
+						</ul>
+					</span></li>
+				</ul>
+				</div>
+            </a></th>
+            <th class="oscars">4</th>
+        </tr>
+        <tr>
+            <th><a href="#">Daniel Day-Lewis
+            <!-- img+h4+ul>(li>strong+span)*3 -->
+            </a></th>
+            <th class="oscars">3</th>
+        </tr>
+        <tr>
+            <th><a href="#">Meryl Streep
+            <!-- img+h4+ul>(li>strong+span)*3 -->
+            </a></th>
+            <th class="oscars">3</th>
+        </tr>
+        <tr>
+            <th><a href="#">Jack Nicholson
+            <!-- img+h4+ul>(li>strong+span)*3 -->
+            </a></th>
+            <th class="oscars">3</th>
+        </tr>
+        <tr>
+            <th><a href="#">Ingrid Bergman
+            <!-- img+h4+ul>(li>strong+span)*3 -->
+            </a></th>
+            <th class="oscars">3</th>
+        </tr>
+    </table>
 </body>
+
 </html>
