@@ -50,18 +50,30 @@ function createActor(name, surName, birthDate, films, bestFilms) {
         return tempalate;
     }
 }
-function _getById(e) {
+function _getBy(e) {
 	return document.querySelector(e);
 }
-var idHelburg= _getById("#Helburg");
- var Helburg = new createActor("Kathrine", "Helburg", "12 May,1907", 114, ["The Lion in Winter", "On Golden Pond", "Bringing Up Baby"]);
-idHelburg.appendChild(Helburg.actorCard());
-var idLevis = _getById("Levis");
- var Levis = new createActor("Daniel","Day-Lewis","29 April,1957",87,["My Left Foot: The Story of Christy Brown","In the Name of the Father","There Will Be Blood"]);
-idLevis.appendChild(Levis.actorCard());
-var idStreep = _getById("Streep");
-var Streep = new createActor("Meryl","Streep","22 June,1949",269,["Kramer vs. Kramer","The Bridges of Madison County","The Deer Hunter"]);
-idStreep.appendChild(Streep.actorCard());
+   var helburgId = document.querySelector("#Helburb");
+   // var helburgId = _getBy
 
-var Nicholson = new createActor();
-var Ingrid = new createActor();
+ var Helburg = new createActor("Kathrine", "Helburg", "12 May,1907", 114, ["The Lion in Winter", "On Golden Pond", "Bringing Up Baby"]);
+
+
+helburgId.appendChild(Helburg.actorCard());
+// var idLevis = _getById("Levis");
+ var LewisId = document.querySelector("#Lewis");
+ var Lewis = new createActor("Daniel","Day-Lewis","29 April,1957",87,["My Left Foot: The Story of Christy Brown","In the Name of the Father","There Will Be Blood"]);
+LewisId.appendChild(Lewis.actorCard());
+// var idStreep = _getById("Streep");
+ var streepId = document.querySelector("#Streep");
+var Streep = new createActor("Meryl","Streep","22 June,1949",269,["Kramer vs. Kramer","The Bridges of Madison County","The Deer Hunter"]);
+streepId.appendChild(Streep.actorCard());
+ var NicholsonId = document.querySelector("#Nicholson");
+var Nicholson = new createActor("Jack","Nicholson","22 April,1937",195,["One Flew Over the Cuckoo's Nest","The Departed","The Bucket List"]);
+NicholsonId.appendChild(Nicholson.actorCard());
+ var BergmanId = document.querySelector("#Bergman");
+var Bergman = new createActor("Ingrid","Bergman","29 August,1982",184,["Goodbye Again","Casablanca","Höstsonaten"]);
+BergmanId.appendChild(Bergman.actorCard());
+
+// var Nicholson = new createActor();
+// var Ingrid = new createActor();

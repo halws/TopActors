@@ -1,117 +1,35 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+* { margin: 0; padding: 0; }
 
-table,
-thead,
-tbody,
-tfoot,
-tr,
-th,
-td {
-  display: block;
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-collapse: inherit;
-  border-spacing: 0;
-  border-color: inherit;
-  vertical-align: inherit;
-  text-align: left;
-  font-weight: inherit;
-  -webkit-border-horizontal-spacing: 0;
-  -webkit-border-vertical-spacing: 0;
-}
+table, thead, tbody, tfoot, tr, th, td { display: block; width: auto; height: auto; margin: 0; padding: 0; border: none; border-collapse: inherit; border-spacing: 0; border-color: inherit; vertical-align: inherit; text-align: left; font-weight: inherit; -webkit-border-horizontal-spacing: 0; -webkit-border-vertical-spacing: 0; }
 
-th,
-td {
-  display: inline;
-}
+th, td { display: inline; }
 
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-body h1 {
-  margin-bottom: 30px;
-}
+h1 { color: #0092CA; font-size: 40px; font-family: 'Raleway', sans-serif; margin-bottom: 15px; }
 
-table {
-  width: 400px;
-}
-table thead {
-  display: flex;
-  align-items: center;
-  height: 30px;
-  background-color: #ecf0f1;
-}
-table thead th:first-child {
-  margin-left: 15px;
-}
-table thead th:last-child {
-  margin-left: auto;
-  margin-right: 15px;
-}
+a:visited { color: #393E46; }
 
-table tr {
-  display: flex;
-  width: 100%;
-}
-table tbody tr {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  border-bottom: 0.5px solid black;
-}
-table tbody th:first-child {
-  margin-left: 15px;
-}
-table tbody th:last-child {
-  margin-left: auto;
-  margin-right: 15px;
-}
+table { font-family: 'Lato', sans-serif; }
 
-#Actors a {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-}
-#Actors a:hover .player-card {
-  display: block;
-}
-#Actors .player-card {
-  display: none;
-  position: absolute;
-  top: 10px;
-  color: black;
-  cursor: default;
-  width: 360px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-  z-index: 1;
-  background: white;
-  padding: 10px;
-}
-#Actors .player-card img {
-  height: auto;
-  max-width: 30%;
-  float: left;
-  margin-right: 30px;
-  border: 1px solid #ccc;
-}
-#Actors .player-card ul {
-  list-style-type: none;
-}
-#Actors .player-card ul li {
-  margin-left: 15px;
-}
-#Actors .player-card h4 {
-  font-size: 20px;
-}
+body { background-image: url(pictures/photography.png); height: 100vh; display: flex; align-items: center; justify-content: center; }
+body .wrapper { width: 80%; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; background-color: #fff; }
+
+table { color: #393E46; width: 400px; }
+table thead { display: flex; align-items: center; height: 30px; color: #eee; border-radius: 5px 5px 0 0; background-color: #393E46; }
+table thead th:first-child { margin-left: 15px; }
+table thead th:last-child { margin-left: auto; margin-right: 15px; }
+
+table tr { display: flex; width: 100%; }
+table tbody { background-color: #EEEEEE; }
+table tbody tr { border-bottom: 5px solid #393E46; height: 45px; box-sizing: border-box; display: flex; align-items: center; }
+table tbody th:first-child { margin-left: 15px; }
+table tbody th:last-child { margin-left: auto; margin-right: 30px; }
+
+#Actors a { display: inline-block; position: relative; text-decoration: none; }
+#Actors a:hover .player-card { display: block; }
+#Actors .player-card { display: none; position: absolute; top: 10px; color: black; cursor: default; width: 360px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); z-index: 1; background: white; padding: 10px; }
+#Actors .player-card img { height: auto; max-width: 30%; float: left; margin-right: 30px; border: 1px solid #ccc; }
+#Actors .player-card ul { list-style-type: none; }
+#Actors .player-card ul li { margin-left: 15px; }
+#Actors .player-card h4 { font-size: 20px; }
 
 /*# sourceMappingURL=card.css.map */
