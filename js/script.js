@@ -12,9 +12,10 @@ function createActor(name, surName, birthDate, films, bestFilms) {
         var ul = _create('ul');
         for (var i = 0, length1 = bestFilms.length; i < length1; i++) {
             li[i] = _create("li");
-            li[i].innerHTML = bestFilms[i];
+            li[i].innerHTML = i+1+"."+bestFilms[i];
             ul.appendChild(li[i]);
         }
+
         return ul;
     }
     	this.actorCard = function() {
@@ -25,6 +26,8 @@ function createActor(name, surName, birthDate, films, bestFilms) {
             li = [],
             span = [],
             strong = [];
+             // var br=_create("br");
+        
         for (var i = 0; i < 3; i++) {
             li[i] = _create("li");
             span[i] = _create("span");
@@ -34,15 +37,18 @@ function createActor(name, surName, birthDate, films, bestFilms) {
             li[i].appendChild(span[i]);
             ul.appendChild(li[i]);
         }
+            // li[2].appendChild(br);
+        console.log()
         h4.innerHTML = this.name + " "+ this.surName;
         img.setAttribute("src", "pictures/" + this.name + ".jpg");
         playerCard.className = "animated flipInX player-card";
         playerCard.appendChild(img);
         playerCard.appendChild(h4);
         playerCard.appendChild(ul);
-        strong[0].innerHTML = "Date of birth";
-        strong[1].innerHTML = "Film amounds";
-        strong[2].innerHTML = "Best films";
+        strong[0].innerHTML = "Date of birth: ";
+        strong[1].innerHTML = "Film amounds: ";
+        strong[2].innerHTML = "Best films: ";
+
         span[0].innerHTML = this.birthDate;
         span[1].innerHTML = this.films;
         span[2].appendChild(this._bestFilms());
